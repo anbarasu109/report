@@ -36,6 +36,11 @@ body, p {
     color: #090909;
     font-size: 13px;
 }
+.scrollAuto {
+    width: 50%;
+    height: 100%;
+    overflow-y: auto; /* Enables vertical scrolling */
+ }
 h5 {
     font-size: 16px;
     font-weight: 500;
