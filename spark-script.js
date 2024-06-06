@@ -61,7 +61,11 @@ $(".test-item").click(function () {
     $(".test-item").removeClass("active");
     var content = $(this).addClass("active").find(".test-contents").clone();
     $(".test-content-detail .detail-body").empty().append(content.removeClass("d-none"));
-    $(".test-content-detail .detail-body").scrollTop=0;
+    const element = document.getElementById("active-test-content");
+    if (element) {
+        element.scrollTop = 0;
+    }
+   
 
     /* -- [ dynamically add base64 strings ] -- */
     // this is done to preserve space by avoiding double base64 writes to
